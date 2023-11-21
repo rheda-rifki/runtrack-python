@@ -1,16 +1,8 @@
-def est_nombre_premier(nombre):
-    if nombre < 2:
-        return False
-    for i in range(2, int(nombre**0.5) + 1):
-        if nombre % i == 0:
-            return False
-    return True
-
-def afficher_nombres_premiers(maximum):
-    for nombre in range(2, maximum + 1):
-        if est_nombre_premier(nombre):
-            print(nombre, end=" ")
-
-# Appel de la fonction pour afficher les nombres premiers jusqu'à 1000
-afficher_nombres_premiers(1000)
+for n in range(1,1001):
+   if n > 1:
+       for i in range(2,n):
+           if (n % i) == 0:
+               break
+       else:
+           print(n)
 
