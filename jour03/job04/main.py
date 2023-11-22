@@ -1,4 +1,5 @@
 def GetHello():
-    print('Hello la plateforme')
+    return "Hello la Plateforme"
 
-GetHello()
+resultat = GetHello()
+print(resultat)
