@@ -1,9 +1,9 @@
 def ajouter_mangue():
     fruits = ["pomme", "cerise", "orange", "Melon"]
-
-    fruits[2] = "Mangue"
-
+    
+    fruits.insert(2, "Mangue")
+    
     print(fruits)
 
-ajouter_mangue()
 
+ajouter_mangue()
